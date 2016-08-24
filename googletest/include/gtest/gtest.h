@@ -146,6 +146,10 @@ GTEST_DECLARE_bool_(throw_on_failure);
 // the specified host machine.
 GTEST_DECLARE_string_(stream_result_to);
 
+#if GTEST_USE_OWN_FLAGFILE_FLAG_
+GTEST_DECLARE_string_(flagfile);
+#endif  // GTEST_USE_OWN_FLAGFILE_FLAG_
+
 // The upper limit for valid stack trace depths.
 const int kMaxStackTraceDepth = 100;
 
